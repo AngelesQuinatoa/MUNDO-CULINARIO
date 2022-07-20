@@ -1,0 +1,49 @@
+/*::::nav*/
+*hola {
+    box-sizing: border-box;
+}
+.del{ 
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80))
+}
+.columna {
+    float: left;
+    width: 33%;
+    padding-right: 5px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(194, 9, 9, 0.5);
+    color: black;
+}
+
+.fila::after{
+    content: "";
+    clear: both;
+    display: table;
+    width: 100px;
+}
+
+img {
+    /* Para que sea responsiva */
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizin
+Tú9:31
+jajaj
+Cristofer Tambaco9:31
+style.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxUUExYUFBQXFxYYGBwcGhkZGSIgHRkZGR0YHx8hGh8iIioiIB8nHx8cJDQkJy0uMTExHCE2OzYwOiowMS4BCwsLDw4PGhERHDAoIic1MDAyMDAwMDAwMDIwMDI6MjAyMDAwMDAwMDIzMDAwMC4wMDAwMjAwMi4yMDAwMjAwMP/AABEIALcBEwMBIgACEQEDEQH/xAA
