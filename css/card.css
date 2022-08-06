@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 /*::::nav*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   .container {
     width: 100%;
-    height: 170vh;
+    height: 190vh;
     background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/fondo\ negro.jpg);
   } 
   .var {
@@ -21,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-transform: uppercase;
   }
   .logo {
     width:  200px;
@@ -35,8 +39,7 @@
   .navbar > ul > li > a {
     text-decoration: none;
     color: white;
-    font: oblique bold 120% cursive;;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .navbar > ul > li::before {
 
@@ -71,6 +74,7 @@
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     z-index: 10px;  
     transition: all 300ms ease;
+    border-radius: 20px;
 }
 .navbar ul li:hover ul{
     visibility: visible;
@@ -168,17 +172,15 @@ figure:hover{
     list-style: none;
     flex-wrap: wrap;
     text-decoration:none;
-    font-size: 10x;
+    font-size: 12px;
     color: white;
-    font: oblique bold 120% cursive;
 }
 footer p {
     color: black;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    font: oblique bold 120% cursive;
+    font-size: 1.4em;
 }
 footer .wave{
     position: absolute;
@@ -276,7 +278,7 @@ footer .wave#wave4{
 .container__card{
     max-width: 1200px;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 90px;
     perspective: 1000px;
     display: flex;
     justify-content: center;
@@ -292,14 +294,13 @@ footer .wave#wave4{
     transform: rotateY(180deg);
 }
 
-
+/*largo de la carta*/
 .card{
     width: 350px;
-    height: 560px;
+    height: 670px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
-    font-family: 'Lato', sans-serif;
 }
 
 .card__front{
@@ -318,7 +319,6 @@ footer .wave#wave4{
     backface-visibility: hidden;
     transform-style: preserve-3d;
     border-radius: 20px;
-    font-family: 'Lato', sans-serif;
     
 }
 
@@ -331,14 +331,13 @@ footer .wave#wave4{
 .body__card_front{
     width: 100%;
     height: 100%;
-    text-align: center;
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: rgb(199, 198, 198);
     transform: translateZ(60px);
-    font-size: 10px;
+    font-size: 7px;
 }
 
 .bg{
@@ -362,7 +361,6 @@ footer .wave#wave4{
     margin-top: 30px;
     font-size: 18px;
     font-size: 12px;
-    font-family: 'Lato', sans-serif;
 }
 
 .body__card_back input{
@@ -383,7 +381,6 @@ footer .wave#wave4{
 }
 .titulo{
     color: white;
-    font-family: Lucida calligraphy;
     font-size: 30px;
     text-align: center;
 }

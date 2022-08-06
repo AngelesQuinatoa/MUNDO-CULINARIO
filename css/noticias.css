@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 /*::::nav*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   .container {
     width: 100%;
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-transform: uppercase;
   }
   .logo {
     width:  200px;
@@ -36,8 +38,7 @@
   .navbar > ul > li > a {
     text-decoration: none;
     color: white;
-    font: oblique bold 120% cursive;;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .navbar > ul > li::before {
 
@@ -72,6 +73,7 @@
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     z-index: 10px;  
     transition: all 300ms ease;
+    border-radius: 20px;
 }
 .navbar ul li:hover ul{
     visibility: visible;
@@ -169,17 +171,15 @@ figure:hover{
     list-style: none;
     flex-wrap: wrap;
     text-decoration:none;
-    font-size: 10x;
+    font-size: 12px;
     color: white;
-    font: oblique bold 120% cursive;
 }
 footer p {
     color: black;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    font: oblique bold 120% cursive;
+    font-size: 1.4em;
 }
 footer .wave{
     position: absolute;
@@ -291,16 +291,11 @@ footer .wave#wave4{
     font-size: 15px;
 }
 .contenido2{
-    font-family: Agency FB;
     font-size: 13px;
     color: #D3CEDF;
     background-color: #85586F;
     border-radius: 30px;
     padding: 15px;
-}
-.contenido2:hover{
-    color: white;
-    
 }
 *body{
    flex-wrap: wrap;
@@ -328,12 +323,7 @@ background-color: #85586F;
 padding: 30px;
 border-radius: 20px;
 font-size: 13px;
-font-family: Agency FB;
 }
-.contenido4:hover{
-    color: white;
-}
-
 #form {
     width: 250px;
     margin: 0 auto;
