@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-.container {
+/*::::nav*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+  .container {
     width: 100%;
-    height: 190vh;
-    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/fondo\ negro.jpg);
+    height: 100%;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/fondo\ 3.png);
   } 
   .var {
     *width: 100%;
@@ -13,19 +21,17 @@
   .navbar {
     width: 100%;
     margin: auto;
-    padding:  35px 0;
+    padding:  50px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
   }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.navbar > ul > li {
+  .logo {
+    width:  200px;
+    cursor: pointer;
+  }
+  .navbar > ul > li {
     list-style: none;
     display: inline-block;
     margin:  0 30px;
@@ -69,6 +75,7 @@
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     z-index: 10px;  
     transition: all 300ms ease;
+    /* aumentar*/
     border-radius: 20px;
 }
 .navbar ul li:hover ul{
@@ -106,128 +113,29 @@
     font-size: 14px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
 }
-header{
-    width: 100%;
-    height: 80px;
-    margin-top: 40px;
-    position: fixed;
-    z-index: 1; 
-    /*::::z es para mostrar sobre de todo*/
-}
-
-.container__menu{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    width:  200px;
-    cursor: pointer;
-  }
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-
-.menu ul{
-    display: flex;
-}
-
-.menu ul li{
-    list-style: none;
-    margin-left: 36px;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    /*para que todo el texto este en mayuscula*/
-}
-
-#selected{
-    background: #C9BBCF;
-    padding: 10px 40px;
-    border-radius: 50px;
-}
 .exit{
     width: 50px;
 }
-/*COVER*/
-
-
-.container__cover{
-    width: 100%;
-    height: 800px;
-    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/Background-page.png);
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
-.cover{
-    max-width: 1000px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
-.container__cover .text{
-    max-width: 400px;
-}
-
-.container__cover .text h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.container__cover .text p{
-    font-size: 18px;
-    margin-top: 40px;
-}
-
-.container__cover .text input{
-    padding: 18px 80px;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    margin-top: 40px;
-    background: linear-gradient(to right, #C9BBCF, #898AA6);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 1px 1px 30px -12px #898AA6;
-    transition: all 300ms;
-}
-
-.container__cover .text input:hover{
-    box-shadow: 1px 1px 30px -6px #898AA6;
-}
-
-
-.container__cover .svg img{
-    width: 400px;
-    animation: move-vector 4s linear infinite;
-}
-
-@keyframes move-vector {
-    0%{
-        transform: translateY(15px);
-    }50%{
-        transform: translateY(0px);
-    }100%{
-        transform: translateY(15px);
+*@media screen and (max-width: 720px){
+    .logo img{
+        width: 200px;
+    }
+    nav > ul {
+        flex-direction: column;
+        background-color: #F9CEEE;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 300px;
+        transition:  all 300ms ease;
+        z-index: 100;
+        opacity: 1;
+        visibility: hidden;
     }
 }
-
 /*::::Pie de pagina*/
-
+@import url(https://fonts.googleapis.com/css?family==Poppis:200,300,400,500,600,700,800,900&display=swap´);
 
 footer{
     position: relative;
@@ -239,6 +147,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 figure{
     position: relative;
@@ -266,7 +175,7 @@ figure:hover{
     flex-wrap: wrap;
     text-decoration:none;
     font-size: 12px;
-    color: #898AA6;
+    color: white;
 }
 footer p {
     color: black;
@@ -274,4 +183,113 @@ footer p {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.4em;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(/img/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10x;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 15x;
+    animation: animateWave_03 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 0x;
+    animation: animateWave_04 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_03
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_04
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+.bienvenido{
+    font-size: 35px;
+    color: white;
+    margin-left: 100px;
+}
+.bienvenido:hover{
+    transform: scale(1.1);
+    color: #F9CEEE;
+}
+.texto{
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.texto:hover{
+    color: #F9CEEE;
+}
+.libro{
+    width: 250px;
+    margin-left: 900px;
+    margin-top: -200px;
+}
+.texto2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.cook{
+    width: 300px;
+    margin-left: 250px;
+    align-items: center;
 }
