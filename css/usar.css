@@ -6,12 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-
   }
   .container {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/fondo\ 3.png);
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/img/fondo\ negro.jpg);
   } 
   .var {
     *width: 100%;
@@ -21,7 +20,7 @@
   .navbar {
     width: 100%;
     margin: auto;
-    padding:  50px 0;
+    padding:  35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +74,6 @@
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     z-index: 10px;  
     transition: all 300ms ease;
-    /* aumentar*/
     border-radius: 20px;
 }
 .navbar ul li:hover ul{
@@ -147,7 +145,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 figure{
     position: relative;
@@ -175,7 +173,7 @@ figure:hover{
     flex-wrap: wrap;
     text-decoration:none;
     font-size: 12px;
-    color: white;
+    color: black;
 }
 footer p {
     color: black;
@@ -261,35 +259,175 @@ footer .wave#wave4{
         background-position-x: 1000px;
     }
 }
-.bienvenido{
-    font-size: 35px;
+/*::::Hasta aqui el pie de página */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*body{
+    background: #F1FAFF;
+}
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 90px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+/*largo de la carta*/
+.card{
+    width: 350px;
+    height: 670px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: rgb(66, 9, 141);
+   
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199, 198, 198);
+    transform: translateZ(60px);
+    font-size: 7px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+    font-size: 10px;
     color: white;
-    margin-left: 100px;
 }
-.bienvenido:hover{
-    transform: scale(1.1);
-    color: #F9CEEE;
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-size: 12px;
 }
-.texto{
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
     color: white;
-    font-size: 20px;
-    margin-left: 100px;
+    background: #898AA6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
 }
-.texto:hover{
-    color: #F9CEEE;
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #D3CEDF;
 }
-.libro{
-    width: 250px;
-    margin-left: 900px;
-    margin-top: -200px;
-}
-.texto2{
+.titulo{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
+
+
+**Estrellas
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  
 .cook{
-    width: 300px;
-    margin-left: 250px;
+    width: 150px;
+    margin-left: 100px;
     align-items: center;
 }
