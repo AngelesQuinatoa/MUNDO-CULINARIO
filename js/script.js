@@ -69,7 +69,7 @@ form.addEventListener("submit", e=>{
     }else{ 
         parrafo.innerHTML = "Enviado"
     }
-    document.getElementById('boton1').onclick = function(){
+    document.getElementById('boton').onclick = function(){
         alert("A ingresado con exito",'<BR/>');
     }
 })
