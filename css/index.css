@@ -4,7 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.warnings{ 
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
 body {
     height: 100vh;
     display: flex;
